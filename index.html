@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastre-se</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+	if (document.getElementById('password1').value != document.getElementById('password2').value) {
+    document.getElementById('password1').setCustomValidity('Passwords must match.');
+} else {
+    document.getElementById('password1').setCustomValidity('');
+}
+	</script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="main_menu">
+	<ul>
+		<li><a href=""><span>Ola! Entra</span> ou <span>Cadastre-se</span></a></li>
+		<li><a href = "#"> Minhas Ofertas</a></li>
+		<li><img class= "invent" src="img/inventions.png"></li>
+		<li><a href = "#">Ajuda</a></li>
+		<li><a href = "#">Contato</a></li>
+		<li><a href = "#">Forum</a></li>
+		<li><a href = "#">Vender</a></li>
+		<li><a href = "#">Meu YouBike</a></li>
+	</ul>
+</div>	
+	<div class="content">		
+		<form action="#" method="POST" id="enter">
+			<legend>Cadastre-se</legend>
+				<div class="facebook-box">
+					<a href="#" class="facebook-link">
+                	<i class="fa-facebook fa"><img src="img/f.png"></i>
+                	<div class="facebook-button-content"><b>Login In </b>with<b> Facebook</b>&nbsp;&nbsp;&nbsp;&nbsp;<b><img src="img/right.png"></b>
+                	</div>
+                </a>
+                </div>
+                <div class="line">OU</div>
+            <fieldset class="login">
+            	<div class="field">
+					<input type="text" name="first_name" placeholder ="First Name" class="form-text" required value="First Name" >
+				</div>
+				<div class="field">
+					<input type="text" name="last_name" placeholder ="Last Name" class="form-text" required value="Last Name" >
+				</div>
+				<div class="field">
+					<input type="email" name="email" placeholder ="Email address" class="form-text" required value="Email address" >
+				</div>
+				<div class="field">
+					<input type="password" placeholder ="Choose Password" class="form-text" id="password1"  required>
+				</div>
+				<div class="field">
+					<input type="password" placeholder ="Password Confirm" class="form-text" id="password2" required >
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" name="checkbox" id="checkbox">
+					<label for="checkbox" class="text-checkbox">Send me Youbike updates and tips</label>
+				</div>
+				<div class="button-box">
+					<input type="button" href="#" class="button" value="Create my Account">
+				</div>	
+					<span class="text-agree">By clicking the button above, you are agree to the Terms of Service Xiew<br> our Privacy Policy</span>
+				
+			</fieldset>
+		</form>
+	</div>
+</div>		
+</body>
+</html>
+
+
+
+	
+	
